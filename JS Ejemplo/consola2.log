@@ -1,0 +1,354 @@
+40
+
+40
+ty
+VM121:1 Uncaught ReferenceError: ty is not defined
+    at <anonymous>:1:1
+(anónimo) @ VM121:1
+typeof 40
+'number'
+typeof 0
+'number'
+typeof Néstor
+'undefined'
+typeof "Néstor"
+'string'
+typeof true
+'boolean'
+typeof null
+'object'
+typeof []
+'object'
+typeof {}
+'object'
+var nombre = "Ivonne"
+undefined
+var nombre = "Néstor"
+undefined
+nombre
+'Néstor'
+var edad
+undefined
+edad = 31
+31
+edad
+31
+var elementos = ["computadora","celular"]
+undefined
+elementos
+(2) ['computadora', 'celular']
+elementos[1]
+'celular'
+elementos[0]
+'computadora'
+var persona = {}
+undefined
+var persona = {
+    nombre: "Néstor",
+    apellido: "Chumania",
+    edad: 31
+}
+undefined
+persona
+{nombre: 'Néstor', apellido: 'Chumania', edad: 31}apellido: "Chumania"edad: 31nombre: "Néstor"[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+function miFuncion(){
+    return 5;
+}
+undefined
+miFuncion
+ƒ miFuncion(){
+    return 5;
+}
+miFuncion()
+5
+//Llama a la funcion y el otro ve lo que tiene la funcion
+undefined
+var miFuncion = function (a,b){
+    return a+b;
+}
+undefined
+miFuncion(5,7)
+12
+function saludarEstudiantes(estudiante){
+    console.l
+}
+undefined
+function saludarEstudiantes(estudiante){
+    console.log (estudiante);
+}
+undefined
+saludarEstudiantes("Danny");
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Danny
+undefined
+function saludarEstudiantes(estudiante){
+    console.log ("Hola compañero ${estudiante}");
+}
+undefined
+saludarEstudiantes("Danny");
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola compañero ${estudiante}
+undefined
+function saludarEstudiantes(estudiante){
+    console.log ('Hola compañero '+estudiante);
+}
+undefined
+saludarEstudiantes("Danny");
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola compañero Danny
+undefined
+// Los corchetes son importante en JS porque estoy tomando datos de otro lado
+undefined
+function saludarEstudiantes(estudiante){
+    console.log ('Hola compañero ', {estudiante});
+}
+undefined
+saludarEstudiantes("Danny");
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola compañero  {estudiante: 'Danny'}estudiante: "Danny"[[Prototype]]: Object
+undefined
+function saludarEstudiantes(estudiante){
+    console.log (`Hola compañero ${estudiante}`);
+}
+undefined
+saludarEstudiantes("Danny");
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola compañero Danny
+undefined
+function sumar(a,b){
+    var resultado = a + b
+}
+undefined
+4 + "7"
+'47'
+4*"7"
+28
+// JS no te avisa sobre los errores
+undefined
+var a = 4 + "7";
+undefined
+typeof a
+'string'
+var b = 4 * "7";
+undefined
+typeof b
+'number'
+var c = String(a)
+undefined
+typeof c
+'string'
+console.log(c)
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 47
+undefined
+var d = Number (c)
+undefined
+typeof d
+'number'
+boolean(0)
+VM2637:1 Uncaught ReferenceError: boolean is not defined
+    at <anonymous>:1:1
+(anónimo) @ VM2637:1
+boolean(0);
+VM2643:1 Uncaught ReferenceError: boolean is not defined
+    at <anonymous>:1:1
+(anónimo) @ VM2643:1
+boolean(function(){});
+VM2687:1 Uncaught ReferenceError: boolean is not defined
+    at <anonymous>:1:1
+(anónimo) @ VM2687:1
+Boolean(0);
+false
+Boolean(function(){});
+true
+8 == "8"
+true
+var numero = 1;
+undefined
+var resultado = numero === 1? "Si soy un uno" : "No soy un uno";
+undefined
+console.log(resultado);
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Si soy un uno
+undefined
+var numero = 2;
+undefined
+console.log(resultado);
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Si soy un uno
+undefined
+var resultado = numero === 1? "Si soy un uno" : "No soy un uno";
+undefined
+console.log(resultado);
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 No soy un uno
+undefined
+frutas ['uvas','manzana','pera','platano']
+VM3205:1 Uncaught ReferenceError: frutas is not defined
+    at <anonymous>:1:1
+(anónimo) @ VM3205:1
+var frutas = ['uvas','manzana','pera','platano']
+undefined
+var estudiantes = ["Daniel","Danny","Néstor","José","Joel"]
+undefined
+function saludarEstudiantes(estudiante) {
+    console.l
+}
+undefined
+function saludarEstudiantes(estudiante) {
+    console.log(`Hola, ${estudiante}`);
+}
+undefined
+for (var i = 0; i < estudiantes.length; i++){
+    saludarEstudiantes(estudiantes[i])
+}
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Daniel
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Danny
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Néstor
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, José
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Joel
+undefined
+while (estudiantes.length > 0){
+    var estudiante = estudiantes.shift(); // sacar elemento por elemento
+    saludarEstudiantes(estudiante);
+}
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Daniel
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Danny
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Néstor
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, José
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Joel
+undefined
+var estudiantes = ["Daniel","Danny","Néstor","José","Joel"]
+undefined
+while (estudiantes.length > 0){
+    var estudiante = estudiantes.shift(); // sacar elemento por elemento
+    saludarEstudiantes(estudiante);
+}
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Daniel
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Danny
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Néstor
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, José
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Joel
+undefined
+while (estudiantes.length > 0){
+    console.log(estudiantes)
+    var estudiante = estudiantes.shift(); // sacar elemento por elemento
+    saludarEstudiantes(estudiante);
+}
+undefined
+var estudiantes = ["Daniel","Danny","Néstor","José","Joel"]
+undefined
+var estudiantes = ["Daniel","Danny","Néstor","José","Joel"]
+undefined
+while (estudiantes.length > 0){
+    console.log(estudiantes)
+    var estudiante = estudiantes.shift(); // sacar elemento por elemento
+    saludarEstudiantes(estudiante);
+}
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 (5) ['Daniel', 'Danny', 'Néstor', 'José', 'Joel']
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Daniel
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 (4) ['Danny', 'Néstor', 'José', 'Joel']
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Danny
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 (3) ['Néstor', 'José', 'Joel']
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Néstor
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 (2) ['José', 'Joel']
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, José
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 ['Joel']
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Hola, Joel
+undefined
+var miAuto = {
+    marca: "Toyota",
+    modelo: "Corola",
+    annio: 2022
+}
+undefined
+miAuto.annio;
+2022
+var miAuto = {
+    marca: "Toyota",
+    modelo: "Corola",
+    annio: 2022,
+    detalleAuto: function () {
+        console.log(`Auto ${this.modelo} ${this.annio}`);
+    }
+}
+undefined
+miAuto.detalleAuto();
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Auto Corola 2022
+undefined
+function auto(marca, modelo, annio) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.annio = annio;
+}
+undefined
+auto
+ƒ auto(marca, modelo, annio) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.annio = annio;
+}
+var miAuto = new auto("Mazda", "Allegro Elite", 2007);
+undefined
+miAuto
+auto {marca: 'Mazda', modelo: 'Allegro Elite', annio: 2007}
+miAuto.marca
+'Mazda'
+var auto2 = new auto("Tesla","Model X", 2020);
+undefined
+auto2
+auto {marca: 'Tesla', modelo: 'Model X', annio: 2020}
+auto2.modelo
+'Model X'
+var articulosFiltrados = articulos.filter(function (articulo) {
+    return articulo.costo <= 5000
+});
+VM5950:1 Uncaught ReferenceError: articulos is not defined
+    at <anonymous>:1:26
+(anónimo) @ VM5950:1
+var articulos = [
+    {nombre: "Bici", costo: 3000},
+    {nombre: "TV", costo: 4000},
+    {nombre: "Libro", costo: 5000},
+    {nombre: "Celular", costo: 6000},
+    {nombre: "Mouse", costo: 7000},
+]
+undefined
+var articulosFiltrados = articulos.filter(function (articulo) {
+    return articulo.costo <= 5000
+});
+undefined
+articulosFiltrados
+(3) [{…}, {…}, {…}]0: {nombre: 'Bici', costo: 3000}1: {nombre: 'TV', costo: 4000}2: {nombre: 'Libro', costo: 5000}length: 3[[Prototype]]: Array(0)
+var nombreArticulos = articulos.m
+undefined
+var nombreArticulos = articulos.ma
+undefined
+var nombreArticulos = articulos.map(function(articulo) {
+    return articulo.nombre
+});
+undefined
+nombreArticulos
+(5) ['Bici', 'TV', 'Libro', 'Celular', 'Mouse']0: "Bici"1: "TV"2: "Libro"3: "Celular"4: "Mouse"length: 5[[Prototype]]: Array(0)
+var encuentraArticulo = articulos.find(function (params) {
+    
+})
+undefined
+var encuentraArticulo = articulos.find(function (articulo) {
+    return articulo.nombre === "libro"
+})
+undefined
+encuentraArticulo
+undefined
+var encuentraArticulo = articulos.find(function (articulo) {
+    return articulo.nombre === "libro"
+});
+undefined
+encuentraArticulo
+undefined
+articulos.forEach(function (articulo) {
+    console.log(articulo.nombre)
+})
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Bici
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 TV
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Libro
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Celular
+application-fb28b0f6c207e344aed6be4eb7c434959969bab97259dde3800e23b90f73ac77.js:3256 Mouse
+undefined
+var articulosCaros = articulos.some(function (articulo) {
+    return articulo.costo >= 6000;
+});
+undefined
+articulosCaros
+true
